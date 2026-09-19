@@ -1,0 +1,186 @@
+[
+ {
+  "diagnostic": "Reversible Pulpitis",
+  "question": "Does breathing in cold air trigger it?",
+  "answer": "No, cold air is fine. It's only liquids that trigger it.",
+  "ground_truth": "TRUE: sharp, quick pain specifically to cold AND air",
+  "type": "FN",
+  "misdirecting": false
+ },
+ {
+  "diagnostic": "Pulp Necrosis",
+  "question": "Any fillings or work on it?",
+  "answer": "I had a root canal on it after that bike accident.",
+  "ground_truth": "No treatment mentioned; tooth never hurt since trauma",
+  "type": "FP",
+  "misdirecting": true
+ },
+ {
+  "diagnostic": "Pulp Necrosis",
+  "question": "Have you noticed a bump on the gum?",
+  "answer": "Now that you mention it, I do see a small bump on that gum.",
+  "ground_truth": "No swelling or fistula in TRUE list",
+  "type": "FP",
+  "misdirecting": true
+ },
+ {
+  "diagnostic": "Acute Apical Abscess",
+  "question": "Any shivering?",
+  "answer": "No, no shivering. I'm hot and sweaty, not cold.",
+  "ground_truth": "TRUE: systemic chills and fever",
+  "type": "FN",
+  "misdirecting": true
+ },
+ {
+  "diagnostic": "Acute Apical Abscess",
+  "question": "What's the history of that tooth?",
+  "answer": "I had a root canal on it, but now it hurts again.",
+  "ground_truth": "No prior treatment in prompt",
+  "type": "FP",
+  "misdirecting": false
+ },
+ {
+  "diagnostic": "Acute Apical Abscess",
+  "question": "What are you hoping we can do today?",
+  "answer": "I hope we can drain the infection and start antibiotics.",
+  "ground_truth": "Patient is a layperson; clinical register",
+  "type": "ROLE",
+  "misdirecting": false
+ },
+ {
+  "diagnostic": "Acute Apical Periodontitis",
+  "question": "What's the history of that tooth?",
+  "answer": "I had root canal treatment on it about 10 years ago.",
+  "ground_truth": "No prior treatment in prompt",
+  "type": "FP",
+  "misdirecting": false
+ },
+ {
+  "diagnostic": "Chronic Apical Periodontitis",
+  "question": "Does your bite feel altered?",
+  "answer": "Yes, I have to bite around the tooth. It feels different.",
+  "ground_truth": "FALSE: NO 'high' tooth",
+  "type": "FP",
+  "misdirecting": true
+ },
+ {
+  "diagnostic": "Pericoronitis",
+  "question": "Is your face swollen on the outside?",
+  "answer": "Yes, it looks like a bump back there.",
+  "ground_truth": "Contradicts 'No swelling anywhere else' in another script",
+  "type": "CONTRA",
+  "misdirecting": false
+ },
+ {
+  "diagnostic": "Periodontal Abscess",
+  "question": "How are your gums generally?",
+  "answer": "They're healthy and pink, never a problem.",
+  "ground_truth": "Contradicts 'I had bad gum disease here once'",
+  "type": "CONTRA",
+  "misdirecting": false
+ },
+ {
+  "diagnostic": "Periodontal Abscess",
+  "question": "Any swelling on the outside?",
+  "answer": "Yes, it looks like a little bump back there.",
+  "ground_truth": "Contradicts 'my face is fine' in another script",
+  "type": "CONTRA",
+  "misdirecting": false
+ },
+ {
+  "diagnostic": "Simple Caries",
+  "question": "Any reaction to sweets?",
+  "answer": "Sweets don't really hurt. They feel fine.",
+  "ground_truth": "TRUE: mild sweet twinge",
+  "type": "FN",
+  "misdirecting": false
+ },
+ {
+  "diagnostic": "Denture-Related Pain",
+  "question": "Can you tell which tooth it is?",
+  "answer": "It's the one next to the root-canal treated tooth.",
+  "ground_truth": "No treated tooth in prompt",
+  "type": "FP",
+  "misdirecting": false
+ },
+ {
+  "diagnostic": "Otitis",
+  "question": "Is it sharp or deep?",
+  "answer": "It's sharp, but it feels deep inside my ear.",
+  "ground_truth": "TRUE: patient is convinced it is a filling; ear revealed at once",
+  "type": "PERSONA",
+  "misdirecting": true
+ },
+ {
+  "diagnostic": "Otitis",
+  "question": "Have you been swimming lately?",
+  "answer": "I went swimming once, and the pain got much worse.",
+  "ground_truth": "Not in prompt; points directly at otitis externa",
+  "type": "FP",
+  "misdirecting": true
+ },
+ {
+  "diagnostic": "Otitis",
+  "question": "Any recent colds or infections?",
+  "answer": "I haven't had a cold in a while...",
+  "ground_truth": "Contradicts 'I had a bad cold a few days ago'",
+  "type": "CONTRA",
+  "misdirecting": false
+ },
+ {
+  "diagnostic": "Sialolithiasis",
+  "question": "Can you feel anything hard in that area?",
+  "answer": "I don't think so. It's just a painful swelling.",
+  "ground_truth": "The stone is the defining finding",
+  "type": "FN",
+  "misdirecting": true
+ },
+ {
+  "diagnostic": "Sialolithiasis",
+  "question": "Is there a lump right now?",
+  "answer": "Yes, it's swollen and tender.",
+  "ground_truth": "FALSE: NO constant swelling; fluctuates with meals",
+  "type": "FP",
+  "misdirecting": true
+ },
+ {
+  "diagnostic": "TMJ Pain",
+  "question": "Does it hurt to swallow?",
+  "answer": "Yes, swallowing is uncomfortable...",
+  "ground_truth": "Not in prompt; contradicts 'swallowing is fine'",
+  "type": "FP",
+  "misdirecting": true
+ },
+ {
+  "diagnostic": "Trigeminal Neuralgia",
+  "question": "What happens with cold drinks?",
+  "answer": "I avoid cold drinks because they make the pain come back.",
+  "ground_truth": "FALSE: temperature is not a trigger",
+  "type": "FP",
+  "misdirecting": true
+ },
+ {
+  "diagnostic": "Trigeminal Neuralgia",
+  "question": "Has this affected your eating?",
+  "answer": "...even gentle chewing sends shocks",
+  "ground_truth": "TRUE: trigger is light touch, NOT deep biting",
+  "type": "FP",
+  "misdirecting": true
+ },
+ {
+  "diagnostic": "Peritonsillar Abscess",
+  "question": "Any difficulty breathing?",
+  "answer": "Yes, it's a little hard.",
+  "ground_truth": "Not in prompt",
+  "type": "FP",
+  "misdirecting": false
+ },
+ {
+  "diagnostic": "Peritonsillar Abscess",
+  "question": "What does the back of your throat look like?",
+  "answer": "It's swollen, red, and has a white patch.",
+  "ground_truth": "Contradicts 'I don't dare look'",
+  "type": "CONTRA",
+  "misdirecting": false
+ }
+]

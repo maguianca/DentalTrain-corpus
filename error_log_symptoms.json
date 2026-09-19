@@ -1,0 +1,214 @@
+{
+ "DentalTrain-v3": [
+  {
+   "diagnostic": "Otitis",
+   "error": "denies \"sharp\" quality of the pain",
+   "type": "FN",
+   "misdirecting": false
+  },
+  {
+   "diagnostic": "Sialolithiasis",
+   "error": "\"mornings are the worst\" — invents a non-meal pattern",
+   "type": "FP",
+   "misdirecting": true
+  }
+ ],
+ "GPT-5": [
+  {
+   "diagnostic": "Acute Total Pulpitis",
+   "error": "leaks \"[upper/lower]\" placeholder",
+   "type": "TEMPLATE",
+   "misdirecting": false
+  }
+ ],
+ "Gemini-2.5-Pro": [
+  {
+   "diagnostic": "Otitis",
+   "error": "invents recent swimming",
+   "type": "FP",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Otitis",
+   "error": "invents jaw-movement trigger",
+   "type": "FP",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Trigeminal Neuralgia",
+   "error": "does not answer the percussion test",
+   "type": "NONANSWER",
+   "misdirecting": false
+  }
+ ],
+ "Llama-3-8B-base": [
+  {
+   "diagnostic": "Reversible Pulpitis",
+   "error": "pain persists to the morning",
+   "type": "FP",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Pulp Necrosis",
+   "error": "denies the tooth hurt after the trauma",
+   "type": "FN",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Pulp Necrosis",
+   "error": "avoids biting on the tooth",
+   "type": "FP",
+   "misdirecting": false
+  },
+  {
+   "diagnostic": "TMJ Pain",
+   "error": "pain not gone at rest",
+   "type": "FP",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "TMJ Pain",
+   "error": "onset last night vs weeks, same session",
+   "type": "INCOHER",
+   "misdirecting": false
+  },
+  {
+   "diagnostic": "TMJ Pain",
+   "error": "gum chewing \"not a problem\"",
+   "type": "FN",
+   "misdirecting": false
+  },
+  {
+   "diagnostic": "Simple Caries",
+   "error": "omits the sweet twinge",
+   "type": "FN",
+   "misdirecting": false
+  },
+  {
+   "diagnostic": "Simple Caries",
+   "error": "does not answer palpation",
+   "type": "NONANSWER",
+   "misdirecting": false
+  },
+  {
+   "diagnostic": "Acute Total Pulpitis",
+   "error": "pain stops when cold removed",
+   "type": "FN",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Acute Total Pulpitis",
+   "error": "refuses the cold test",
+   "type": "REFUSAL",
+   "misdirecting": false
+  },
+  {
+   "diagnostic": "Acute Total Pulpitis",
+   "error": "refuses to give history",
+   "type": "REFUSAL",
+   "misdirecting": false
+  },
+  {
+   "diagnostic": "Acute Total Pulpitis",
+   "error": "\"no pulse\" then \"throbbing\"",
+   "type": "INCOHER",
+   "misdirecting": false
+  },
+  {
+   "diagnostic": "Acute Apical Abscess",
+   "error": "reports pus draining",
+   "type": "FP",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Acute Apical Abscess",
+   "error": "reports a bitter taste",
+   "type": "FP",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Acute Apical Abscess",
+   "error": "heat makes it worse on a dead tooth",
+   "type": "FP",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Acute Apical Periodontitis",
+   "error": "feels nothing when the tooth is tapped",
+   "type": "FN",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Chronic Apical Periodontitis",
+   "error": "invents gum discolouration",
+   "type": "FP",
+   "misdirecting": false
+  },
+  {
+   "diagnostic": "Pericoronitis",
+   "error": "tapping the tooth hurts",
+   "type": "FP",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Pericoronitis",
+   "error": "percussion of neighbouring molar hurts",
+   "type": "FP",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Periodontal Abscess",
+   "error": "hot drinks worsen the gum pain",
+   "type": "FP",
+   "misdirecting": false
+  },
+  {
+   "diagnostic": "Periodontal Abscess",
+   "error": "\"bite is a bit off\"",
+   "type": "FP",
+   "misdirecting": false
+  },
+  {
+   "diagnostic": "Periodontal Abscess",
+   "error": "cold water hurts the tooth",
+   "type": "FP",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Periodontal Abscess",
+   "error": "no reaction to heat on a vital tooth",
+   "type": "FN",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Otitis",
+   "error": "jaw movement triggers the pain",
+   "type": "FP",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Sialolithiasis",
+   "error": "denies any hard lump",
+   "type": "FN",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Trigeminal Neuralgia",
+   "error": "sensation \"not normal\" (implies numbness)",
+   "type": "FP",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Trigeminal Neuralgia",
+   "error": "consents to face touch",
+   "type": "FN",
+   "misdirecting": true
+  },
+  {
+   "diagnostic": "Trigeminal Neuralgia",
+   "error": "\"No... actually yes\" to night pain",
+   "type": "INCOHER",
+   "misdirecting": true
+  }
+ ]
+}

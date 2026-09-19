@@ -1,0 +1,12 @@
+# Kiro Crew agent settings (local, not part of the dataset)
+.kiro/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
